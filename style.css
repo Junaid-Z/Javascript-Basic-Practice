@@ -1,0 +1,31 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    padding: 40px;
+}
+
+table {
+    border-spacing: 0;
+    border: 1px solid black;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+tfoot {
+    font-weight: 600;
+}
+
+ol {
+    font-size: 1.2em;
+    padding: 10px;
+    list-style: decimal inside;
+}
