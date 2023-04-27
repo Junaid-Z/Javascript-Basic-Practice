@@ -5,18 +5,22 @@
     box-sizing: border-box;
 }
 
+:root {
+    --black: #414141;
+}
+
 html {
     padding: 40px;
 }
 
 table {
     border-spacing: 0;
-    border: 1px solid black;
+    border: 1px solid var(--black);
 }
 
 th,
 td {
-    border: 1px solid black;
+    border: 1px solid var(--black);
     padding: 20px;
 }
 
@@ -28,4 +32,39 @@ ol {
     font-size: 1.2em;
     padding: 10px;
     list-style: decimal inside;
+}
+
+button {
+    border-radius: .7rem;
+    font-size: 1.1rem;
+    color: var(--black);
+    width: 10rem;
+    padding: .6rem;
+    background-color: rgb(255, 255, 255);
+    border: .15rem solid rgba(120, 129, 255, 0.681);
+    cursor: pointer;
+    transition: border 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+button:hover {
+    border: .15rem solid rgb(80, 41, 255);
+}
+
+.chapters {
+    align-items: start;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+}
+
+main {
+    display: flex;
+    gap: 2rem;
+}
+
+#codeBox {
+    border-radius: .7rem;
+    padding: 1rem;
+    border: .15rem solid var(--black);
+    width: 100%;
 }
